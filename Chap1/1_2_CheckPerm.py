@@ -5,8 +5,6 @@ from itertools import permutations
 #####################################
 
 def CheckPerm(str1, str2):
-    str1 = str1.lower()
-    str2 = str2.lower()
     x = list(permutations(str1))
     i = []
     for k in x:
@@ -21,13 +19,9 @@ def CheckPerm(str1, str2):
     else:
         return False
 
-
-
-
 #####################################
 # Here are tests to see see if the function works
 #####################################
-
 
 class Test(unittest.TestCase):
     # str1, str2, is_permutation
