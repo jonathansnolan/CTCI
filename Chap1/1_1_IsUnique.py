@@ -1,5 +1,9 @@
 import unittest
 
+#####################################
+# This is the function itself
+#####################################
+
 def IsUnique(s):
     x = list(dict.fromkeys(s))
     for k in x:
@@ -12,6 +16,9 @@ def IsUnique(s):
     return True
 
 
+#####################################
+# Here are tests to see see if the function works
+#####################################
 
 class Test(unittest.TestCase):
     test_cases = [
