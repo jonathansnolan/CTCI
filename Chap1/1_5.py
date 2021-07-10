@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr  6 18:50:14 2021
-
-@author: Emily
-"""
-
 def oneaway(x,y):
     # INSERT
     x = list(x)
@@ -15,15 +8,15 @@ def oneaway(x,y):
                 continue
             else:
                 return "1 FUCK"
-    
+
     # REMOVAL
     if (len(x)-1) == len(y):
         for k in y:
             if k in x:
                 continue
             else:
-                return "2 FUCK"   
-    
+                return "2 FUCK"
+
     # REPLACE
     count = 0
     if len(x) == len(y):
@@ -34,9 +27,9 @@ def oneaway(x,y):
                 count += 1
         if len(x) != (count+1):
             return "3 FUCK"
-    
+
     return "WE ARE LAUGHING"
-        
+
 
 ###############################
 print(oneaway("pale", "ple"))

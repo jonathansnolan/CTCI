@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import unittest
 def urlify_algo(str,n):
     x = str.rstrip()

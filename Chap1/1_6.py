@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr  6 18:59:16 2021
-
-@author: Emily
-"""
-
 def stngcomp(string):
     x = list(string)
     count = 1
@@ -18,13 +11,13 @@ def stngcomp(string):
             i += y + str(count)
             count = 1
             y = string[k]
-            
+
     ans = i+y+str(count)
-    
+
     if len(ans) > len(string):
         return string
     else:
         return ans
-    
+
 print(stngcomp("aabcccccaaal"))
 print(stngcomp("abcdef"))

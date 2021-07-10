@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr  6 19:25:39 2021
-
-@author: Emily
-"""
 import copy
 
 def zeromatrix(x):
@@ -20,7 +14,7 @@ def zeromatrix(x):
             for b in list(range(len(x))):
                 if x[m][n] == 0:
                     h[b][n] = 0
-    
+
     return x
 
 print(zeromatrix([[1,2,3,4],
