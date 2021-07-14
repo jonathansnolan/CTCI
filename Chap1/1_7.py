@@ -4,7 +4,9 @@ Rotate Matrix
 We're going to rotate the exterior rows of a matrix 90 degrees to the right
 
 """
+
 test = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+
 
 def rotate(matrix):
     ans = []
@@ -40,7 +42,7 @@ def rotate(matrix):
     right = right[::-1]
     for k in list(range(len(ans[0]))):
         ans[-1][k] = right[k]
-
+    return ans
     ##################
     # step 5: bottom
 print(test)
