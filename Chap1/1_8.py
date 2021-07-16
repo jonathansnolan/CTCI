@@ -1,21 +1,31 @@
-import copy
 
-def zeromatrix(x):
-    h = copy.copy(x)
-    nnn = []
-    for m in list(range(0,len(x))):
-        if 0 in x[m]:
-                nnn.append(m)
+def zeromatrix(matrix):
+    # First Copy the Matrix
+    i = []
+    for k in matrix:
+        copy = []
+        zeros = []
+        for u in k:
+            copy.append(u)
+            zeros.append(0)
+        i.append(copy)
 
-    for m in list(range(0,len(x))):
-        for n in list(range(0,len(x[m]))):
-            if 0 in x[m]:
-                h[m][n] = 0
-            for b in list(range(len(x))):
-                if x[m][n] == 0:
-                    h[b][n] = 0
+    # ROWS
 
-    return x
+    for k in range(len(matrix)):
+        if 0 in matrix[k]:
+            i[k] = zeros
+
+    #COLUMNS
+
+    for u in range(len(matrix[0])):
+        for k in range(len(matrix)):
+            if matrix[k][u] == 0:
+                for k in range(len(matrix)):
+                    i[k][u] = 0
+    return i
+
+
 
 print(zeromatrix([[1,2,3,4],
                   [2,4,0,4],
